@@ -1,0 +1,31 @@
+
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      
+      #Trae el código del repositorio
+      - uses: actions/checkout@v4
+
+      #Instala python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      #Instala las dependencias del proyecto
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      #Revisar el estilo con ruff
+      - name: Lint with ruff
+        run: ruff check .
+
+      #Ejecuta los tests del proyecto
+      - name: Run tests
+        run: pytest
+    
