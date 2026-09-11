@@ -1,4 +1,7 @@
 pandas==2.3.3
+numpy
+scikit-learn
+joblib
 pandera==0.33.1
 pytest==9.1.1
 ruff==0.16.7
