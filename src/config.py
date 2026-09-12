@@ -5,7 +5,7 @@ from pathlib import Path
 # Rutas del proyecto
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
-DATA_FILE = DATA_DIR / "dataset-ti-tickets-selected-columns.csv"
+DATA_FILE = DATA_DIR / "dataset-ti-tickets.csv"
 MODELS_DIR = BASE_DIR / "models"
 MODEL_FILE = MODELS_DIR / "ticket_classifier.joblib"
 

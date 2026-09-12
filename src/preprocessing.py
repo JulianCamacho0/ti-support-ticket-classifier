@@ -30,9 +30,6 @@ def split_features_target(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
     """Separa el DataFrame en variables predictoras (X) y variable objetivo (y)."""
     X = prepare_features(df)
 
-    print('Asi esta X:')
-    print(X.head())
-    
     y = df[TARGET_COLUMN]
     return X, y
 

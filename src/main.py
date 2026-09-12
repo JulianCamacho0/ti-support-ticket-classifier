@@ -42,6 +42,5 @@ def main() -> None:
     joblib.dump(model, MODEL_FILE)
     print(f"Modelo guardado en: {MODEL_FILE}")
 
-
 if __name__ == "__main__":
     main()
