@@ -5,5 +5,6 @@ joblib==1.6.0
 pandera==0.33.1
 fastapi==0.141.1
 uvicorn==0.52.4
+httpx
 pytest==9.1.1
 ruff==0.16.7

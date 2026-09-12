@@ -25,7 +25,7 @@ def main() -> None:
 
     df = validate_dataset(df)
     print("Validación del esquema completada correctamente")
-
+    
     X, y = split_features_target(df)
 
     X_train, X_test, y_train, y_test = train_test_split(

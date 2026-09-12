@@ -1,11 +1,8 @@
 """Lectura de los datos crudos del proyecto."""
 
 from pathlib import Path
-
 import pandas as pd
-
 from src.config import DATA_FILE
-
 
 def load_data(path: Path = DATA_FILE) -> pd.DataFrame:
     """Carga el dataset de tickets desde `path` y lo devuelve como DataFrame."""
