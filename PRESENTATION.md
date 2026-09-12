@@ -7,7 +7,7 @@
 **Nota del expositor:** Presentarse brevemente y anunciar que esta charla busca mostrar, en lenguaje simple, un problema del día a día del negocio y una posible forma de aliviarlo con tecnología. Dejar claro que no se necesita conocimiento técnico para seguir la presentación.
 
 ---
-#— El problema
+# El problema
 
 Imagina que cada día llegan **cientos de solicitudes**: peticiones, incidentes, preguntas, reclamos...
 
