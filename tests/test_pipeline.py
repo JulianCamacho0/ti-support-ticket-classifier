@@ -9,8 +9,8 @@ from pandera.errors import SchemaError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.data import load_data
 from src.config import FEATURE_COLUMNS
+from src.data import load_data
 from src.preprocessing import split_features_target
 from src.train import train_model
 from src.validation import validate_dataset
