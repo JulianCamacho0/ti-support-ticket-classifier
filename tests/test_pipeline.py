@@ -24,40 +24,20 @@ def _sample_df(n_per_class: int = 4) -> pd.DataFrame:
             {
                 "subject": f"Printer issue {i}",
                 "body": "The printer is not responding after the latest update.",
-                "answer": "Please restart the device.",
                 "type": "Incident",
                 "queue": "Technical Support",
                 "priority": "high",
                 "language": "en",
-                "version": 51,
-                "tag_1": "Hardware",
-                "tag_2": None,
-                "tag_3": None,
-                "tag_4": None,
-                "tag_5": None,
-                "tag_6": None,
-                "tag_7": None,
-                "tag_8": None,
             }
         )
         rows.append(
             {
                 "subject": f"Billing question {i}",
                 "body": "I would like clarification about my last invoice.",
-                "answer": "Here are the billing details you requested.",
                 "type": "Request",
                 "queue": "Billing and Payments",
                 "priority": "low",
                 "language": "en",
-                "version": 51,
-                "tag_1": "Billing",
-                "tag_2": None,
-                "tag_3": None,
-                "tag_4": None,
-                "tag_5": None,
-                "tag_6": None,
-                "tag_7": None,
-                "tag_8": None,
             }
         )
     return pd.DataFrame(rows)
