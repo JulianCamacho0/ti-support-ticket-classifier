@@ -2,6 +2,7 @@
 
 import sys
 from pathlib import Path
+
 import pandas as pd
 import pytest
 from pandera.errors import SchemaError
@@ -9,6 +10,7 @@ from pandera.errors import SchemaError
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.schema import validate_data
+
 
 def _base_row(**overrides):
     row = {
